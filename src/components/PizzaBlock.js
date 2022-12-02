@@ -67,13 +67,21 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
   );
 }
 
-//check type of obj
+//check type of obj vars
 PizzaBlock.propTypes = {
   name: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   types: PropTypes.arrayOf(PropTypes.number).isRequired,
   sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+};
+
+PizzaBlock.defaultProps = {
+  name: '---',
+  imageUrl: '',
+  price: 0,
+  types: [],
+  sizes: [],
 };
 
 export default PizzaBlock;
