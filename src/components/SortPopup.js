@@ -4,7 +4,7 @@ function SortPopup({ items }) {
   const [viseblePopup, setVisiblePopup] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
   const sortRef = useRef();
-  const activeLabel = items[activeItem];
+  const activeLabel = items[activeItem].name;
   const toggleVisiblePopup = () => {
     setVisiblePopup(!viseblePopup);
   };
@@ -27,7 +27,7 @@ function SortPopup({ items }) {
     <div ref={sortRef} className="sort">
       <div className="sort__label">
         <svg
-          className={viseblePopup ? 'rotated' : ''}
+          className={viseblePopup ? 'active' : ''}
           width="10"
           height="6"
           viewBox="0 0 10 6"
@@ -48,9 +48,9 @@ function SortPopup({ items }) {
               return (
                 <li
                   onClick={() => onSelestItem(index)}
-                  key={`${item}_${index}`}
+                  key={`${item.type}_${index}`}
                   className={activeItem === index ? 'active' : ''}>
-                  {item}
+                  {item.name}
                 </li>
               );
             })}

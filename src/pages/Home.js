@@ -8,7 +8,13 @@ function Home({ items }) {
         <Categories
           items={['All', 'Meat', 'Vegeterian', 'Grill', 'Hot', 'Calcone']}
         />
-        <SortPopup items={['popular', 'price', 'abc']} />
+        <SortPopup
+          items={[
+            { name: 'popular', type: 'popular' },
+            { name: 'price', type: 'name' },
+            { name: 'abc', type: 'abc' },
+          ]}
+        />
       </div>
       <h2 className="content__title">Все пиццы</h2>
       <div className="content__items">
