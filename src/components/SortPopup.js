@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
-function SortPopup({ items }) {
-  const [viseblePopup, setVisiblePopup] = useState(false);
-  const [activeItem, setActiveItem] = useState(0);
-  const sortRef = useRef();
+const SortPopup = React.memo(function SortPopup({ items }) {
+  const [viseblePopup, setVisiblePopup] = React.useState(false);
+  const [activeItem, setActiveItem] = React.useState(0);
+  const sortRef = React.useRef();
   const activeLabel = items[activeItem].name;
   const toggleVisiblePopup = () => {
     setVisiblePopup(!viseblePopup);
@@ -14,7 +14,7 @@ function SortPopup({ items }) {
       setVisiblePopup(false);
     }
   };
-  useEffect(() => {
+  React.useEffect(() => {
     document.body.addEventListener('click', handleOutsideCLick);
   }, []);
 
@@ -59,6 +59,6 @@ function SortPopup({ items }) {
       )}
     </div>
   );
-}
+});
 
 export default SortPopup;
