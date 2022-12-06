@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import classNames from 'classnames';
-function PizzaBlock({ name, imageUrl, price, types, sizes }) {
+function PizzaBlock({ name, imageUrl, price, types, sizes, isLoading }) {
   const [activeType, setActiveType] = useState(types[0]);
   const [activeSize, setActiveSize] = useState(sizes[0]);
   const availableTypes = ['Thin', 'Traditional'];
   const availableSizes = [26, 30, 45];
+
   const onSelectType = (index) => {
     setActiveType(index);
   };
