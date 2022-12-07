@@ -68,7 +68,7 @@ function PizzaBlock({
         </ul>
       </div>
       <div className="pizza-block__bottom">
-        <div className="pizza-block__price">от {price} $</div>
+        <div className="pizza-block__price">{price} $</div>
         <Button onClick={handleAddPizza} className="button--add" outline>
           <svg
             width="12"
@@ -81,7 +81,7 @@ function PizzaBlock({
               fill="white"
             />
           </svg>
-          <span>Добавить</span>
+          <span>Add</span>
           {addedCount && <i>{addedCount}</i>}
         </Button>
       </div>
