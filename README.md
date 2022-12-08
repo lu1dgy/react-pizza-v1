@@ -1,7 +1,7 @@
 <h1>React-pizza</h1>
 
 <h2>Description:</h2>
-<p>It's a SPA where you can add pizzas to cart and sort them</p>
+<p>It's a SPA where you can add/delete pizzas to cart and sort them</p>
 
 <h3>Technologies:</h3>
 <p>This page has adaptive layout.</p>
