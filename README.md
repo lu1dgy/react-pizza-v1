@@ -11,4 +11,4 @@
 </ul>
 
 <p>This project has legacy code, so I did new one, you can check it here! <a href="https://github.com/lu1dgy/react-pizza-v2.0.0">https://github.com/lu1dgy/react-pizza-v2.0.0</a> </p>
-<p>g</p>
+<p>But if you're interested to see this work, you can use 'npm start' and check at your localhost!</p>
