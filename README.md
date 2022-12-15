@@ -6,11 +6,9 @@
 <h3>Technologies:</h3>
 <ul>
 <li>JavaScript</li>
-<li>React.js</li>
+<li>React</li>
 <li>Redux</li>
 </ul>
 
-<p>This project has legacy code, so i did new one, you can check it here! <a href="https://github.com/lu1dgy/react-pizza-v2.0.0">https://github.com/lu1dgy/react-pizza-v2.0.0</a> </p>
-
-<h3>What I want to add?</h3>
-<p>Create Adaptive layout!</p>
+<p>This project has legacy code, so I did new one, you can check it here! <a href="https://github.com/lu1dgy/react-pizza-v2.0.0">https://github.com/lu1dgy/react-pizza-v2.0.0</a> </p>
+<p>g</p>
